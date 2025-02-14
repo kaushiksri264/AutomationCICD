@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: com.cucumber.TestNGTestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.73 s <<< FAILURE! -- in com.cucumber.TestNGTestRunner
+com.cucumber.TestNGTestRunner.runScenario["Positive Test of Submiting the order", "Purchase the order from Ecommerce Website"](1) -- Time elapsed: 28.32 s <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button _ngcontent-vch-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1679, 26). Other element would receive the click: <div _ngcontent-vch-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=133.0.6943.54)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9f1d763e4530a5bba0d1d51ac7a56e81, clickElement {id=f.F1F5F5879B9BE1EF11CED86A0C18E6E0.d.8A11E379CA85329AD0F20A648046CD7C.e.73}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.54, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: /var/folders/m7/8hb2jgc92gj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50595/devtoo..., se:cdpVersion: 133.0.6943.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (9f1d763e4530a5bba0d1d51ac7a56e81)] -> css selector: [routerlink*='cart']]
+Session ID: 9f1d763e4530a5bba0d1d51ac7a56e81
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at automationtesting.SeleniumFrameWorkDesign.abstractcomponent.AbstractComponent.goToCartPage(AbstractComponent.java:56)
+	at com.stepDefinitions.StepDefinitionsImpl.Checkout_and_submit_the_order(StepDefinitionsImpl.java:50)
+	at ✽.Checkout IPHONE 13 PRO and submit the order(file:///Users/kaushikpamidimuklala/Desktop/My%20Projects/SeleniumFrameWorkDesign/src/test/java/com/cucumber/SubmitOrder.feature:12)
+
