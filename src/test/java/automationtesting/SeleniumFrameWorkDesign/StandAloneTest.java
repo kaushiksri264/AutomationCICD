@@ -17,13 +17,14 @@ public class StandAloneTest {
 
 	public static void main(String args[]) throws InterruptedException {
 		// TODO Auto-generated method stub
+		
 		String productName = "IPHONE 13 PRO";
 
 		WebDriverManager.chromedriver().setup();
 
 		WebDriver driver = new ChromeDriver();
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		driver.manage().window().maximize();
 		
@@ -37,7 +38,7 @@ public class StandAloneTest {
 		driver.findElement(By.name("login")).click();
 		
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
 
